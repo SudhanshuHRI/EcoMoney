@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="profile-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-center">
+                <div class="row w-50 p-2">
+                    <div class="col-12 col-md-4 border text-center p-2 menuButtons " id="sideMenuButton">Side Menu</div>
+                    <div class="col-12 col-md-4 border text-center p-2 menuButtons" id="dropDownButton">Dropdown Menu
+                    </div>
+                    <div class="col-12 col-md-4 border text-center p-2 menuButtons" id="modelButton">Modal PopUp Menu
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div id="dropdownMenu" class=" p-3 hidden">
+            <ul>
+                <li onclick="handleClick(event)">Profile Settings</li>
+                <li onclick="handleClick(event)">Account Settings</li>
+                <li onclick="handleClick(event)">Logout</li>
+            </ul>
+        </div>
+
+
+        <div id="sideMenu" class="w-25 p-3 hidden">
+            <ul>
+                <li onclick="handleClick(event)">Profile Settings</li>
+                <li onclick="handleClick(event)">Account Settings</li>
+                <li onclick="handleClick(event)">Logout</li>
+            </ul>
+        </div>
+
+        <div id="modalPopup" class="p-3  hidden">
+            <div></div>
+            <ul>
+                <li onclick="handleClick(event)">Profile Settings</li>
+                <li onclick="handleClick(event)">Account Settings</li>
+                <li onclick="handleClick(event)">Logout</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
