@@ -45,6 +45,9 @@ body{
     color:white;
     cursor: pointer;
 }
+.modelMenu{
+    list-style-type: none;
+}
 
 #dropdownMenu{
     border:1px solid black;

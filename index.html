@@ -18,7 +18,8 @@
                     <div class="col-12 col-md-4 border text-center p-2 menuButtons " id="sideMenuButton">Side Menu</div>
                     <div class="col-12 col-md-4 border text-center p-2 menuButtons" id="dropDownButton">Dropdown Menu
                     </div>
-                    <div class="col-12 col-md-4 border text-center p-2 menuButtons" id="modelButton">Modal PopUp Menu
+                    <div class="col-12 col-md-4 border text-center p-2 menuButtons" id="modelButton"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Modal PopUp Menu
                     </div>
 
                 </div>
@@ -42,14 +43,42 @@
             </ul>
         </div>
 
-        <div id="modalPopup" class="p-3  hidden">
-            <div></div>
+        <!-- <div style="background-color: black; min-height: 100vh; width: 100vw;"></div> -->
+        <!-- <div id="modalPopup" class="p-3  hidden">
+
             <ul>
                 <li onclick="handleClick(event)">Profile Settings</li>
                 <li onclick="handleClick(event)">Account Settings</li>
                 <li onclick="handleClick(event)">Logout</li>
             </ul>
 
+        </div> -->
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hi Model Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modelMenu">
+                        <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Account Settings</a></li>
+
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
         </div>
     </div>
 

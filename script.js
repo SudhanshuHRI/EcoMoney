@@ -31,4 +31,4 @@ function handleClick(event) {
 
 setupToggle(dropDownButton, dropdownMenu);
 setupToggle(sideMenuButton, sideMenu);
-setupToggle(modelButton, modalPopup);
+// setupToggle(modelButton, modalPopup);
